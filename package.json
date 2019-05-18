@@ -10,7 +10,14 @@
   "keywords": [
     "react-native"
   ],
-  "author": "",
+  "author": {
+    "name": "wuxing",
+    "email": "xing.wu@ctrip.com"
+  },
+  "repository": {
+    "type": "git",
+    "url":"git@github.com:XingXiaoWu/wxbridge.git"
+  },
   "license": "",
   "peerDependencies": {
     "react-native": "^0.41.2"

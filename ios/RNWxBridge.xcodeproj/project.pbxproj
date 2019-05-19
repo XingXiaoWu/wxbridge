@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		108C960722905F5A00D93BCE /* WXRNViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 108C960622905F5A00D93BCE /* WXRNViewCtrl.m */; };
-		108C960B229060C900D93BCE /* ZHBPopTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 108C960A229060C900D93BCE /* ZHBPopTipView.m */; };
+		10B724B92291355300F43F5A /* ZHBPopTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B724B82291355300F43F5A /* ZHBPopTipView.m */; };
+		10B724BC2291356B00F43F5A /* WXRNViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B724BA2291356A00F43F5A /* WXRNViewCtrl.m */; };
 		B3E7B58A1CC2AC0600A0062D /* RNWxBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNWxBridge.m */; };
 /* End PBXBuildFile section */
 
@@ -25,10 +25,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		108C960522905F5A00D93BCE /* WXRNViewCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXRNViewCtrl.h; sourceTree = "<group>"; };
-		108C960622905F5A00D93BCE /* WXRNViewCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXRNViewCtrl.m; sourceTree = "<group>"; };
-		108C9609229060C900D93BCE /* ZHBPopTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHBPopTipView.h; sourceTree = "<group>"; };
-		108C960A229060C900D93BCE /* ZHBPopTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHBPopTipView.m; sourceTree = "<group>"; };
+		10B724B72291355300F43F5A /* ZHBPopTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHBPopTipView.h; sourceTree = "<group>"; };
+		10B724B82291355300F43F5A /* ZHBPopTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHBPopTipView.m; sourceTree = "<group>"; };
+		10B724BA2291356A00F43F5A /* WXRNViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXRNViewCtrl.m; sourceTree = "<group>"; };
+		10B724BB2291356B00F43F5A /* WXRNViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXRNViewCtrl.h; sourceTree = "<group>"; };
 		134814201AA4EA6300B7C361 /* libRNWxBridge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNWxBridge.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E7B5881CC2AC0600A0062D /* RNWxBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNWxBridge.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNWxBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNWxBridge.m; sourceTree = "<group>"; };
@@ -45,11 +45,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		108C9608229060C900D93BCE /* ZHBPopTipView */ = {
+		10B724B62291355300F43F5A /* ZHBPopTipView */ = {
 			isa = PBXGroup;
 			children = (
-				108C9609229060C900D93BCE /* ZHBPopTipView.h */,
-				108C960A229060C900D93BCE /* ZHBPopTipView.m */,
+				10B724B72291355300F43F5A /* ZHBPopTipView.h */,
+				10B724B82291355300F43F5A /* ZHBPopTipView.m */,
 			);
 			path = ZHBPopTipView;
 			sourceTree = "<group>";
@@ -65,11 +65,11 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				108C9608229060C900D93BCE /* ZHBPopTipView */,
+				10B724B62291355300F43F5A /* ZHBPopTipView */,
 				B3E7B5881CC2AC0600A0062D /* RNWxBridge.h */,
 				B3E7B5891CC2AC0600A0062D /* RNWxBridge.m */,
-				108C960522905F5A00D93BCE /* WXRNViewCtrl.h */,
-				108C960622905F5A00D93BCE /* WXRNViewCtrl.m */,
+				10B724BB2291356B00F43F5A /* WXRNViewCtrl.h */,
+				10B724BA2291356A00F43F5A /* WXRNViewCtrl.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -131,9 +131,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				108C960722905F5A00D93BCE /* WXRNViewCtrl.m in Sources */,
-				108C960B229060C900D93BCE /* ZHBPopTipView.m in Sources */,
 				B3E7B58A1CC2AC0600A0062D /* RNWxBridge.m in Sources */,
+				10B724B92291355300F43F5A /* ZHBPopTipView.m in Sources */,
+				10B724BC2291356B00F43F5A /* WXRNViewCtrl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +229,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/../../../ios/Pods/**",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
@@ -245,6 +246,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/../../../ios/Pods/**",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";

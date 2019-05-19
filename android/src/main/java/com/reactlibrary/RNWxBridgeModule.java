@@ -1,5 +1,5 @@
 
-package com.csshotel.wxBridge;
+package com.reactlibrary;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;

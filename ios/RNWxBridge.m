@@ -1,6 +1,6 @@
 
 #import "RNWxBridge.h"
-#import "AppDelegate.h"
+//#import "AppDelegate.h"
 #import "WXRNViewCtrl.h"
 
 #import "MBProgressHUD.h"
@@ -20,23 +20,23 @@
     return dispatch_get_main_queue();
 }
 RCT_EXPORT_MODULE(wxnative)
-
-RCT_EXPORT_METHOD(navigate:(NSString*)moduleName fileName:(NSString*)fileName){
-    dispatch_async(dispatch_get_main_queue(), ^{
-        AppDelegate *appdelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-        WXRNViewCtrl *ctrl = [[WXRNViewCtrl alloc]initWithModuleName:moduleName fileName:fileName];
-        [appdelegate.nav pushViewController:ctrl animated:YES];
-    });
-}
-
-
-RCT_EXPORT_METHOD(popViewCtrl){
-    dispatch_async(dispatch_get_main_queue(), ^{
-        AppDelegate *appdelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-        //    RNViewCtrl *ctrl = [[RNViewCtrl alloc]initWithModuleName:moduleName fileName:fileName];
-        [appdelegate.nav popViewControllerAnimated:YES];
-    });
-}
+//
+//RCT_EXPORT_METHOD(navigate:(NSString*)moduleName fileName:(NSString*)fileName){
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//        AppDelegate *appdelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+//        WXRNViewCtrl *ctrl = [[WXRNViewCtrl alloc]initWithModuleName:moduleName fileName:fileName];
+//        [appdelegate.nav pushViewController:ctrl animated:YES];
+//    });
+//}
+//
+//
+//RCT_EXPORT_METHOD(popViewCtrl){
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//        AppDelegate *appdelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+//        //    RNViewCtrl *ctrl = [[RNViewCtrl alloc]initWithModuleName:moduleName fileName:fileName];
+//        [appdelegate.nav popViewControllerAnimated:YES];
+//    });
+//}
 
 #pragma mark -- loading
 //普通loading
@@ -61,4 +61,4 @@ RCT_EXPORT_METHOD(showToast:(NSString*)message){
 }
 
 @end
-  
+

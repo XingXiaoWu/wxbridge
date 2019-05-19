@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #if __has_include("RCTBridgeDelegate.h")
-#import "RCTBridgeModule.h"
+#import "RCTBridgeDelegate.h"
 #else
 #import <React/RCTBridgeDelegate.h>
 #endif

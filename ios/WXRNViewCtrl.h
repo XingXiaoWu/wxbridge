@@ -10,6 +10,7 @@
 
 #if __has_include("RCTBridgeDelegate.h")
 #import "RCTBridgeDelegate.h"
+//0.0.4
 #else
 #import <React/RCTBridgeDelegate.h>
 #endif

@@ -1,6 +1,6 @@
 
 #import "RNWxBridge.h"
-//#import "AppDelegate.h"
+#import "AppDelegate.h"
 #import "WXRNViewCtrl.h"
 
 #import "MBProgressHUD.h"

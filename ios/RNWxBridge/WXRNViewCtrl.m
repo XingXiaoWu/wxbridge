@@ -7,7 +7,7 @@
 //
 
 #import "WXRNViewCtrl.h"
-
+#import "WXTools.h"
 
 #if __has_include("RCTBridge.h")
 #import "RCTBridge.h"
@@ -52,18 +52,12 @@
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
 {
-    NSURL *url = [[NSBundle mainBundle] URLForResource:self.fileName withExtension:@"jsbundle"];
+    NSURL *url = [WXTools getUrl:self.fileName];
     if (url) {
         return url;
     }else{
         return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
     }
-    //
-    //#if DEBUG
-    //  return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:self.moduleName fallbackResource:nil];
-    //#else
-    //  return [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
-    //#endif
 }
 
 /*

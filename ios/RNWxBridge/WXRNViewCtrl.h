@@ -20,7 +20,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface WXRNViewCtrl : UIViewController<RCTBridgeDelegate>
-- (instancetype)initWithModuleName:(NSString *)moduleName fileName:(NSString *)fileName;
+- (instancetype)initWithModuleName:(NSString *)moduleName fileName:(NSString *)fileName params:(NSDictionary* _Nullable )params;
 @end
 
 NS_ASSUME_NONNULL_END

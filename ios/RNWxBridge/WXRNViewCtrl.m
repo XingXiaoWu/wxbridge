@@ -25,15 +25,18 @@
 
 @property (nonatomic, copy) NSString *fileName;
 
+@property (nonatomic, copy) NSDictionary *params;
+
 @end
 
 @implementation WXRNViewCtrl
 
-- (instancetype)initWithModuleName:(NSString *)moduleName fileName:(NSString *)fileName{
+- (instancetype)initWithModuleName:(NSString *)moduleName fileName:(NSString *)fileName params:(NSDictionary* _Nullable )params{
     self = [super init];
     if(self) {
         self.moduleName = moduleName;
         self.fileName = fileName;
+        self.params = params;
     }
     return self;
 }
@@ -44,7 +47,7 @@
     RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:nil];
     RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge
                                                      moduleName:self.moduleName
-                                              initialProperties:nil];
+                                              initialProperties:self.params];
     self.view = rootView;
 }
 

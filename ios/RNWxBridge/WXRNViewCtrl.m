@@ -34,9 +34,9 @@
 - (instancetype)initWithModuleName:(NSString *)moduleName fileName:(NSString *)fileName params:(NSDictionary* _Nullable )params{
     self = [super init];
     if(self) {
-        self.moduleName = moduleName;
-        self.fileName = fileName;
-        self.params = params;
+        self.moduleName = [moduleName copy];
+        self.fileName = [fileName copy];
+        self.params = [params copy];
     }
     return self;
 }

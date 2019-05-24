@@ -1,6 +1,6 @@
-
-import { NativeModules } from 'react-native';
-
-const { RNWxBridge } = NativeModules;
-
-export default RNWxBridge;
+import {showLoading,showToast,dismissLoading} from "./native"
+export {
+    showLoading,
+    showToast,
+    dismissLoading
+}

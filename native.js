@@ -1,5 +1,4 @@
-
-import { NativeModules } from 'react-native';
+import {NativeModules, Platform, ToastAndroid} from "react-native";
 
 const { wxnative } = NativeModules;
 
@@ -9,7 +8,7 @@ function showToast(message) {
     if (Platform.OS === 'ios') {
         wxnative.showToast(message)
     } else {
-        ToastAndroid.show(message)
+        ToastAndroid.show(message,2)
     }
 }
 // loading

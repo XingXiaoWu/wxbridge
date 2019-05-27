@@ -21,7 +21,7 @@ public class RNWxBridgeModule extends ReactContextBaseJavaModule {
 
   @Override
   public String getName() {
-    return "wx";
+    return "wxnative";
   }
 
   @ReactMethod

@@ -10,6 +10,7 @@
 		1093BA6B2292AD37006949D9 /* WXTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1093BA6A2292AD37006949D9 /* WXTools.m */; };
 		10B7270C22914E2500F43F5A /* WXRNViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B7270B22914E2500F43F5A /* WXRNViewCtrl.m */; };
 		10B7271022914E5A00F43F5A /* ZHBPopTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B7270F22914E5A00F43F5A /* ZHBPopTipView.m */; };
+		10FC2511229E441600077422 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 10FC250F229E441600077422 /* MBProgressHUD.m */; };
 		B3E7B58A1CC2AC0600A0062D /* RNWxBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNWxBridge.m */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,8 @@
 		10B7270B22914E2500F43F5A /* WXRNViewCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXRNViewCtrl.m; sourceTree = "<group>"; };
 		10B7270E22914E5A00F43F5A /* ZHBPopTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHBPopTipView.h; sourceTree = "<group>"; };
 		10B7270F22914E5A00F43F5A /* ZHBPopTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHBPopTipView.m; sourceTree = "<group>"; };
+		10FC250F229E441600077422 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		10FC2510229E441600077422 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		134814201AA4EA6300B7C361 /* libRNWxBridge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNWxBridge.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E7B5881CC2AC0600A0062D /* RNWxBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNWxBridge.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNWxBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNWxBridge.m; sourceTree = "<group>"; };
@@ -72,6 +75,15 @@
 			path = ZHBPopTipView;
 			sourceTree = "<group>";
 		};
+		10FC250E229E441600077422 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				10FC250F229E441600077422 /* MBProgressHUD.m */,
+				10FC2510229E441600077422 /* MBProgressHUD.h */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		134814211AA4EA7D00B7C361 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +95,7 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				10FC250E229E441600077422 /* MBProgressHUD */,
 				1093BA6C2292AD51006949D9 /* RNWxBridge */,
 				10B7270D22914E5A00F43F5A /* ZHBPopTipView */,
 				134814211AA4EA7D00B7C361 /* Products */,
@@ -148,6 +161,7 @@
 			files = (
 				1093BA6B2292AD37006949D9 /* WXTools.m in Sources */,
 				10B7270C22914E2500F43F5A /* WXRNViewCtrl.m in Sources */,
+				10FC2511229E441600077422 /* MBProgressHUD.m in Sources */,
 				10B7271022914E5A00F43F5A /* ZHBPopTipView.m in Sources */,
 				B3E7B58A1CC2AC0600A0062D /* RNWxBridge.m in Sources */,
 			);
@@ -244,7 +258,6 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
-					"$(SRCROOT)/../../../ios/Pods/**",
 					"$(SRCROOT)/../../../ios/**",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
@@ -261,7 +274,6 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
-					"$(SRCROOT)/../../../ios/Pods/**",
 					"$(SRCROOT)/../../../ios/**",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";

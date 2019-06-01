@@ -3,12 +3,7 @@
 #import "AppDelegate.h"
 #import "WXRNViewCtrl.h"
 
-#import "MBProgressHUD.h"
-#import "ZHBPopTipView.h"
-
 @interface RNWxBridge()
-
-@property (nonatomic, strong) MBProgressHUD *hud;
 
 @end
 
@@ -37,28 +32,5 @@ RCT_EXPORT_METHOD(popViewCtrl){
         [appdelegate.nav popViewControllerAnimated:YES];
     });
 }
-
-#pragma mark -- loading
-//普通loading
-RCT_EXPORT_METHOD(showLoading){
-    dispatch_async(dispatch_get_main_queue(), ^{
-        UIWindow *window = [UIApplication sharedApplication].delegate.window;
-        self.hud = [MBProgressHUD showHUDAddedTo:window animated:YES];
-    });
-}
-//
-RCT_EXPORT_METHOD(dismissLoading){
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self.hud hideAnimated:YES];
-    });
-}
-
-#pragma mark -- Toast展示
-RCT_EXPORT_METHOD(showToast:(NSString*)message){
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [ZHBPopTipView showText:message position:ZHBPopTipViewPositionCenter duration:2];
-    });
-}
-
 @end
 

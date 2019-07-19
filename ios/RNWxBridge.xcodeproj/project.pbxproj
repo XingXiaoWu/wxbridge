@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1043CA5022E169EB00B0E1C7 /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1043CA4A22E169EB00B0E1C7 /* DeviceInfo.m */; };
+		1043CA5122E169EB00B0E1C7 /* WXAlgUserDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1043CA4C22E169EB00B0E1C7 /* WXAlgUserDataManager.m */; };
+		1043CA5222E169EB00B0E1C7 /* WXAlgKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 1043CA4F22E169EB00B0E1C7 /* WXAlgKeyChain.m */; };
+		1043CA5622E16B8E00B0E1C7 /* PhoneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1043CA5522E16B8E00B0E1C7 /* PhoneModel.m */; };
 		1093BA6B2292AD37006949D9 /* WXTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1093BA6A2292AD37006949D9 /* WXTools.m */; };
 		10B7270C22914E2500F43F5A /* WXRNViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B7270B22914E2500F43F5A /* WXRNViewCtrl.m */; };
 		B3E7B58A1CC2AC0600A0062D /* RNWxBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNWxBridge.m */; };
@@ -25,6 +29,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1043CA4922E169EB00B0E1C7 /* DeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceInfo.h; sourceTree = "<group>"; };
+		1043CA4A22E169EB00B0E1C7 /* DeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceInfo.m; sourceTree = "<group>"; };
+		1043CA4C22E169EB00B0E1C7 /* WXAlgUserDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXAlgUserDataManager.m; sourceTree = "<group>"; };
+		1043CA4D22E169EB00B0E1C7 /* WXAlgKeyChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXAlgKeyChain.h; sourceTree = "<group>"; };
+		1043CA4F22E169EB00B0E1C7 /* WXAlgKeyChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXAlgKeyChain.m; sourceTree = "<group>"; };
+		1043CA5322E16AEC00B0E1C7 /* WXAlgUserDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXAlgUserDataManager.h; sourceTree = "<group>"; };
+		1043CA5422E16B8E00B0E1C7 /* PhoneModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneModel.h; sourceTree = "<group>"; };
+		1043CA5522E16B8E00B0E1C7 /* PhoneModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneModel.m; sourceTree = "<group>"; };
 		1093BA692292AD37006949D9 /* WXTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXTools.h; sourceTree = "<group>"; };
 		1093BA6A2292AD37006949D9 /* WXTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXTools.m; sourceTree = "<group>"; };
 		1093BA6E2292BE9F006949D9 /* WXHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXHeader.h; sourceTree = "<group>"; };
@@ -46,13 +58,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1043CA4522E1681900B0E1C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1043CA5422E16B8E00B0E1C7 /* PhoneModel.h */,
+				1043CA5522E16B8E00B0E1C7 /* PhoneModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1043CA4622E1681900B0E1C7 /* Ctrls */ = {
+			isa = PBXGroup;
+			children = (
+				10B7270A22914E2500F43F5A /* WXRNViewCtrl.h */,
+				10B7270B22914E2500F43F5A /* WXRNViewCtrl.m */,
+			);
+			path = Ctrls;
+			sourceTree = "<group>";
+		};
+		1043CA4722E1681900B0E1C7 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				1043CA4822E169EB00B0E1C7 /* DeviceInfo */,
+				1043CA4B22E169EB00B0E1C7 /* KeyChain */,
+				1093BA692292AD37006949D9 /* WXTools.h */,
+				1093BA6A2292AD37006949D9 /* WXTools.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		1043CA4822E169EB00B0E1C7 /* DeviceInfo */ = {
+			isa = PBXGroup;
+			children = (
+				1043CA4922E169EB00B0E1C7 /* DeviceInfo.h */,
+				1043CA4A22E169EB00B0E1C7 /* DeviceInfo.m */,
+			);
+			path = DeviceInfo;
+			sourceTree = "<group>";
+		};
+		1043CA4B22E169EB00B0E1C7 /* KeyChain */ = {
+			isa = PBXGroup;
+			children = (
+				1043CA5322E16AEC00B0E1C7 /* WXAlgUserDataManager.h */,
+				1043CA4C22E169EB00B0E1C7 /* WXAlgUserDataManager.m */,
+				1043CA4D22E169EB00B0E1C7 /* WXAlgKeyChain.h */,
+				1043CA4F22E169EB00B0E1C7 /* WXAlgKeyChain.m */,
+			);
+			path = KeyChain;
+			sourceTree = "<group>";
+		};
 		1093BA6C2292AD51006949D9 /* RNWxBridge */ = {
 			isa = PBXGroup;
 			children = (
-				1093BA692292AD37006949D9 /* WXTools.h */,
-				1093BA6A2292AD37006949D9 /* WXTools.m */,
-				10B7270A22914E2500F43F5A /* WXRNViewCtrl.h */,
-				10B7270B22914E2500F43F5A /* WXRNViewCtrl.m */,
+				1043CA4622E1681900B0E1C7 /* Ctrls */,
+				1043CA4522E1681900B0E1C7 /* Model */,
+				1043CA4722E1681900B0E1C7 /* Tools */,
 				B3E7B5881CC2AC0600A0062D /* RNWxBridge.h */,
 				B3E7B5891CC2AC0600A0062D /* RNWxBridge.m */,
 				1093BA6E2292BE9F006949D9 /* WXHeader.h */,
@@ -134,8 +194,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1093BA6B2292AD37006949D9 /* WXTools.m in Sources */,
+				1043CA5622E16B8E00B0E1C7 /* PhoneModel.m in Sources */,
 				10B7270C22914E2500F43F5A /* WXRNViewCtrl.m in Sources */,
 				B3E7B58A1CC2AC0600A0062D /* RNWxBridge.m in Sources */,
+				1043CA5022E169EB00B0E1C7 /* DeviceInfo.m in Sources */,
+				1043CA5222E169EB00B0E1C7 /* WXAlgKeyChain.m in Sources */,
+				1043CA5122E169EB00B0E1C7 /* WXAlgUserDataManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

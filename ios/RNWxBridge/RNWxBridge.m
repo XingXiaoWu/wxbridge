@@ -2,7 +2,8 @@
 #import "RNWxBridge.h"
 #import "AppDelegate.h"
 #import "WXRNViewCtrl.h"
-
+#import "PhoneModel.h"
+#import "WXTools.h"
 @interface RNWxBridge()
 
 @end
@@ -31,6 +32,13 @@ RCT_EXPORT_METHOD(popViewCtrl){
         //    RNViewCtrl *ctrl = [[RNViewCtrl alloc]initWithModuleName:moduleName fileName:fileName];
         [appdelegate.nav popViewControllerAnimated:YES];
     });
+}
+#pragma mark 初始化原生设备信息
+RCT_EXPORT_METHOD(getNativeInfo:(RCTPromiseResolveBlock)resolve reject:(RCTPromiseRejectBlock)reject){
+    //  获取  版本号，build号
+    PhoneModel *phoneModel = [PhoneModel sharePhoneModel];
+    NSDictionary *dic = [WXTools getObjectData:phoneModel];
+    resolve(dic);
 }
 @end
 

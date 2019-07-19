@@ -1,6 +1,7 @@
-import {showLoading,showToast,dismissLoading} from "./native"
+import {navigate, popViewCtrl, getNativeInfo} from "./native"
+
 export {
-    showLoading,
-    showToast,
-    dismissLoading
+    navigate,
+    getNativeInfo,
+    popViewCtrl,
 }

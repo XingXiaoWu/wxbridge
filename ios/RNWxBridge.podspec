@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                   RNWxBridge
                    DESC
-  s.homepage     = ""
+  s.homepage     = "https://github.com/author/RNWxBridge.git"
   s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author             = { "wuxing" => "329106954@qq.com" }

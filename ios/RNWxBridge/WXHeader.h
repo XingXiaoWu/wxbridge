@@ -16,5 +16,5 @@
 //#define wxWebAppDirName [kWebappDirPrefixName stringByAppendingFormat:@"_%@", getAppVersion()]
 #define wxWebAppDirPath  [wxDocumentDir stringByAppendingFormat:@"/%@/",wxWebappDirPrefixName]
 
-
+#define wxUUID @"com.wx.uuid"
 #endif /* WXHeader_h */

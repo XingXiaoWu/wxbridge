@@ -7,7 +7,7 @@
 //
 
 #import "PhoneModel.h"
-#import "CsTools.h"
+#import "WXTools.h"
 #import "DeviceInfo.h"
 @implementation PhoneModel
 

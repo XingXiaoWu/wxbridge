@@ -103,10 +103,10 @@
 
 #pragma mark - 获取UUID
 + (NSString *)getUUID{
-    NSString *uuid = [CssHotelAlgWXUserDataManager readKey:CsUUID];
+    NSString *uuid = [WXAlgUserDataManager readKey:wxUUID];
     if ([uuid length] < 1) {
         uuid = [[[UIDevice currentDevice]identifierForVendor]UUIDString];
-        [CssHotelAlgWXUserDataManager saveValue:uuid forKey:CsUUID];
+        [WXAlgUserDataManager saveValue:uuid forKey:wxUUID];
     }
     return uuid;
 }
